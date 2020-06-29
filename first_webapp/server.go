@@ -7,13 +7,13 @@ import (
 
 func handler(writer http.ResponseWriter, request *http.Request) {
 
-	fmt.Fprintf(writer, "Hi there, %s!", request.URL.Path[1:])
+	fmt.Fprintf(writer, "Yossi David, %s!", request.URL.Path[1:1])
 
 }
 
 func main() {
 
 	http.HandleFunc("/", handler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8030", nil)
 
 }
